@@ -1,0 +1,58 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List App</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f4f4f9; }
+        .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        input, select, button { padding: 8px; margin: 5px 0; width: 100%; box-sizing: border-box; }
+        button { background: #007BFF; color: white; border: none; cursor: pointer; }
+        button:hover { background: #0056b3; }
+        .book-item { background: #eee; padding: 10px; margin-top: 5px; display: flex; justify-content: space-between; align-items: center; border-radius: 4px; }
+        .book-item button { width: auto; background: #dc3545; padding: 5px 10px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Book List Application</h2>
+    <p>Total Books: <span id="bookCount">0</span></p>
+
+    <!-- Add Book Form -->
+    <h3>Add New Book</h3>
+    <input type="text" id="titleInput" placeholder="Book Title">
+    <input type="text" id="authorInput" placeholder="Author Name">
+    <input type="number" id="yearInput" placeholder="Publication Year">
+    <button id="addBtn">Add Book</button>
+
+    <hr>
+
+    <!-- Search & Sort -->
+    <input type="text" id="searchInput" placeholder="Search by title...">
+    <select id="sortSelect">
+        <option value="">Sort By</option>
+        <option value="az">A to Z</option>
+        <option value="za">Z to A</option>
+    </select>
+
+    <!-- Book Display Area -->
+    <h3>Books List</h3>
+    <div id="bookList"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+    <script src="first.js"></script>
+</body>
+</html>
